@@ -3,9 +3,6 @@
 % This test code shows
 %
 
-addpath('../Func/')
-setDir
-
 %%
 % 1. whether we can uncover the true low dimensional subspace in the limit
 %    of large data for single stage.
@@ -153,7 +150,7 @@ setDir
 %  07/22/2014
 
 clear all
-addpath('../Release_LDSI_v3/');
+addpath('../Code/');
 
 rng('Shuffle');
 
@@ -233,4 +230,4 @@ for nStage   = 1:totStage
     
 end
 suptitle('Single latent unit')
-setPrint(3*8, 3*6, 'Plots/Test_single_latent_unit')
+setPrint(3*8, 3*6, 'Plots/Test_single_latent_unit', 'png')

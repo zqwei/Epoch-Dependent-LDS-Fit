@@ -16,7 +16,7 @@
 %
 
 clear all %#ok<*CLALL>
-addpath('../Release_LDSI_v3/');
+addpath('../Code/');
 
 
 rng('Shuffle');

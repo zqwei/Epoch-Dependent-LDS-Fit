@@ -16,7 +16,7 @@
 %
 
 clear all %#ok<*CLALL>
-addpath('../Release_LDSI_v3/');
+addpath('../Code/');
 
 % %%
 % % 1.
@@ -84,7 +84,7 @@ for n_plot = 1: plot_n_trial
     xlabel('Time')
     ylabel('Sqrt. root simulated firing rate')
 end
-setPrint(4*8, 6, 'Plots/Test_Poisson_High_firing_rate_Idential_Trial')
+setPrint(4*8, 6, 'Plots/Test_Poisson_High_firing_rate_Idential_Trial', 'png')
 
 Yratio   = 0.5;
 Y        = poissrnd(exp(Z)*Yratio);
@@ -103,7 +103,7 @@ for n_plot = 1: plot_n_trial
     xlabel('Time')
     ylabel('Sqrt. root simulated firing rate')
 end
-setPrint(4*8, 6, 'Plots/Test_Poisson_Medium_firing_rate_Idential_Trial')
+setPrint(4*8, 6, 'Plots/Test_Poisson_Medium_firing_rate_Idential_Trial', 'png')
 
 Yratio   = 0.1;
 Y        = poissrnd(exp(Z)*Yratio);
@@ -122,7 +122,7 @@ for n_plot = 1: plot_n_trial
     xlabel('Time')
     ylabel('Sqrt. root simulated firing rate')
 end
-setPrint(4*8, 6, 'Plots/Test_Poisson_Low_firing_rate_Idential_Trial')
+setPrint(4*8, 6, 'Plots/Test_Poisson_Low_firing_rate_Idential_Trial', 'png')
 
 
 %% generate outputs of LDS
@@ -153,7 +153,7 @@ for n_plot = 1: plot_n_trial
     xlabel('Time')
     ylabel('Sqrt. root simulated firing rate')
 end
-setPrint(4*8, 6, 'Plots/Test_Poisson_High_firing_rate_Random_Trial')
+setPrint(4*8, 6, 'Plots/Test_Poisson_High_firing_rate_Random_Trial', 'png')
 
 Y        = poissrnd(exp(Z));
 Ph       = lds(sqrt(Y), xDim,'mean_type','no_mean','tol',1e-5); 
@@ -170,7 +170,7 @@ for n_plot = 1: plot_n_trial
     xlabel('Time')
     ylabel('Sqrt. root simulated firing rate')
 end
-setPrint(4*8, 6, 'Plots/Test_Poisson_Medium_firing_rate_Random_Trial')
+setPrint(4*8, 6, 'Plots/Test_Poisson_Medium_firing_rate_Random_Trial', 'png')
 
 Y        = poissrnd(exp(Z)*0.1);
 Ph       = lds(sqrt(Y), xDim,'mean_type','no_mean','tol',1e-5); 
@@ -187,7 +187,7 @@ for n_plot = 1: plot_n_trial
     xlabel('Time')
     ylabel('Sqrt. root simulated firing rate')
 end
-setPrint(4*8, 6, 'Plots/Test_Poisson_Low_firing_rate_Random_Trial')
+setPrint(4*8, 6, 'Plots/Test_Poisson_Low_firing_rate_Random_Trial', 'png')
 
 
 

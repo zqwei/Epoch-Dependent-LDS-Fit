@@ -162,4 +162,4 @@ for nStage   = 1:totStage
     
 end
 suptitle('Single latent unit')
-setPrint(3*8, 3*6, 'Plots/Test_single_latent_unit')
+setPrint(3*8, 3*6, 'Plots/Test_single_latent_unit','png')

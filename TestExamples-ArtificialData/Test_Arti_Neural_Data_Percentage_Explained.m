@@ -1,5 +1,5 @@
 clear all
-addpath('../Release_LDSI_v3/');
+addpath('../Code/');
 
 % This is an example for stable dynamical system ,where |A-1|<0
 % Since it is hard to intepret P matrix (Uniqueness of the solution is not
@@ -62,7 +62,7 @@ box off; xlabel('# of Latent Dimensions')
 subplot(1, 3, 3)
 plot(AIC/max(AIC),'-ok','linewid', 2); ylabel('Normalized AIC')
 box off; xlabel('# of Latent Dimensions')
-setPrint(3*8, 6, 'Plots/Test_multi_latent_unit_performance')
+setPrint(3*8, 6, 'Plots/Test_multi_latent_unit_performance', 'png')
 
 Ph             = lds(Y, 3,'mean_type','no_mean','tol',1e-5);
 [~, y_est,~]   = loo(Y, Ph);
@@ -82,7 +82,7 @@ for n_plot = 1: plot_n_trial
 end
 
 suptitle('Three latent units')
-setPrint(3*8, 3*6, 'Plots/Test_multi_latent_unit')
+setPrint(3*8, 3*6, 'Plots/Test_multi_latent_unit', 'png')
 
 % err_all            = sum(Y(:).^2);
 % 
