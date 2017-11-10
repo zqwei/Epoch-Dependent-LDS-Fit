@@ -24,13 +24,10 @@ Y         = cell2mat(Y);
 Y         = reshape(Y,yDim,K, T);
 Y         = permute(Y, [1 3 2]);
 Y         = Y/binsize;
-Y         = sqrt(Y);
-%     Y(Y==0)   = 1;
-%     Y         = log(Y.^2);
-
+% Y         = sqrt(Y);
 m         = ceil(sqrt(yDim));
 
-h         = figure;
+figure;
 for nNeuron = 1: yDim
     subplot(m, m, nNeuron);
     hold on;
@@ -49,6 +46,9 @@ for nNeuron = 1: yDim
     ylabel('Firing rate (Hz)','fontsize',12);
     hold off;
 end
+
+setPrint(8*m, 6*m, fname, 'png');
+
 
 is_suc = false;
 
@@ -82,8 +82,8 @@ for nNeuron = 1: yDim
     ylabel('Firing rate (Hz)','fontsize',12);
     hold off;
 end
-% % % % setPrintSvg(h, 8*m, 6*m, [fname,'_Est_Dim_3_Firing_rate.svg']);
-% % % 
+setPrint(8*m, 6*m, [fname,'_Est_Dim_3'], 'png');
+
 timePoints = [0, timePoint, T];
 
 figure;
