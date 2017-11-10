@@ -31,7 +31,7 @@
 %
 
 clear all
-addpath('../Release_LDSI_v3/');
+addpath('../Code/');
 
 % 1.1
 % This is an example for stable dynamical system ,where |A-1|<0
