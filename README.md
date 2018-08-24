@@ -2,7 +2,7 @@
 Epoch dependent linear dynamics system fit
 
 # About
-This code is a version of the original for epoch-dependent linear dynamics system (EDLDS) fit, developed and used to uncover the latent-space dynamics from the simultaneous recordings of frontal neural dynamics in paper *An orderly single-trial organization of population dynamics in premotor cortex predicts behavioral variability* (Wei et al., *submitted*).
+This code of epoch-dependent linear dynamics system (EDLDS) fit, was originally developed and used to uncover the latent-space dynamics from the simultaneous recordings of frontal neural dynamics in [Wei et al. (2018)](https://www.biorxiv.org/content/early/2018/07/25/376830).
 
 # Folder structure
 
