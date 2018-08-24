@@ -1,4 +1,7 @@
 # Epoch-Dependent-LDS-Fit
+
+[![DOI](https://zenodo.org/badge/110267382.svg)](https://zenodo.org/badge/latestdoi/110267382)
+
 Epoch dependent linear dynamics system fit
 
 # About
