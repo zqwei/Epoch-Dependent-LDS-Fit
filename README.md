@@ -68,6 +68,4 @@ MIT
 
 # Citation
 
-If you find our code helpful to your work, consider giving us a shout-out in your publications:
-
-Wei Z et al.
+[Wei et al. (2018)](https://www.biorxiv.org/content/early/2018/07/25/376830): An orderly single-trial organization of population dynamics in premotor cortex predicts behavioral variability
